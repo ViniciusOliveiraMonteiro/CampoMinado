@@ -28,7 +28,7 @@ data class Campo(val linha: Int, val coluna: Int){
         callbacks.add(callback)
     }
 
-    fun abrir(){
+    fun abrir(){            //método que abre cada campo e diz se está minado ou seguro
         if (fechado){
             aberto = true
             if (minado){
@@ -52,7 +52,7 @@ data class Campo(val linha: Int, val coluna: Int){
         minado = true
     }
 
-    fun reinicializar(){
+    fun reiniciar(){
         aberto = false
         marcado = false
         minado = false
