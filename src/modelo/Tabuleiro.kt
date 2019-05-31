@@ -88,5 +88,6 @@ class Tabuleiro(val qtdeLinhas:Int, val qtdeColunas: Int, private val qtdeMinas:
 
     fun reiniciar(){
         forEachCampo { it.reiniciar() }
+        sortearMinas()
     }
 }
